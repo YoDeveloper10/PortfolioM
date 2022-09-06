@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Projeto Web Design</title>
+        <meta charset="utf-8">
+        <meta name="description" content="aqui vai a descrição...">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <meta name="keywords" content="projetowebdesign,designweb">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">        
+        <!--Colocar meta tags SEO-->
+    </head>
+    <body>
+        <header>
+            
+            <div class="container">
+                <div class="logo"><a href="index.html"><h2>Logomarca</h2></a></div>
+                     <nav class="menu-desktop">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li class="selected"><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav><!--menu-desktop-->
+                    <nav class="menu-mobile">
+                        <h2><i class="fa-solid fa-bars"></i></h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li class="selected"><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav><!--menu-mobile-->
+            <div class="clear"></div>
+            </div><!--container-->
+        </header>
+        <section style="background-image:url('images/banner.jpg') ;" class="tittle-page">
+            <div class="overlay__tittle-page"></div>
+            <div class="container">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet. Ut aperiam assumenda quo nostrum quis est iusto neque. 
+                quaerat enim quo rerum explicabo aut itaque accusamus.</p>
+            </div><!--container-->
+        </section><!--tittle-page-->
+
+        <section class="contato">
+            <div class="container">
+                <div class="w60 formulario">
+                    <h2>Entrem em contato que estaremos respondendo o mais breve possível!</h2>
+                        <form method="post">
+                            <div class="w50">
+                                <input required type="text" name="nome" placeholder="Seu nome...">
+                            </div><!--w50-->
+                            <div class="w50">
+                                <input required type="text" name="sobrenome" placeholder="Seu sobrenome...">
+                            </div><!--w50-->
+                            <div class="w100">
+                                <input required type="email" name="email" placeholder="Seu email">
+                            </div><!--w100-->
+                            <div class="w100">
+                               <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+                            </div><!--w100-->
+                        </form>
+                </div><!--w60-->
+                <div class="w40 tags-contato" >
+                    <h2><i class="fa solid fa-comment"></i> Fale com a nossa equipe</h2>
+                    <p>Lorem ipsum dolor sit amet. Ut aperiam assumenda quo nostrum quis est iusto neque. 
+                        quaerat enim quo rerum explicabo aut itaque accusamus.</p>
+
+                    <p class="tag-contato"><i class="fa-brands fa-facebook"></i> /redesocial.com</p>
+                    <p class="tag-contato"><i class="fa-brands fa-facebook"></i> /seusite.com</p>
+                </div><!--w40-->
+                <div class="clear"></div>
+            </div><!--container-->
+        </section><!--contato-->
+
+        <section class="footer">
+            <footer class="footer1">
+                <div class="container">
+                    <div class="w33">
+                        <h2>Onde estamos?</h2>
+                        <p><i class="fa-solid fa-map-location-dot"></i></i> R.Fulano eterno, Liberdade, São Paulo-SP</p>
+                        <p><i class="fa-solid fa-phone"></i> (11) 0000-0000</p>
+                    </div><!--w33-->
+                    <div class="w33">
+                        <h2>Links Utéis:</h2>
+                        <a href="https://www.youtube.com"> Facebook</a>
+                        <a href="https://www.youtube.com"> Instagram</a>
+                        <a href="https://www.youtube.com"> Twitter</a>
+                    </div><!--w33-->
+                    <div class="w33">
+                        <h2>Conecte-se conosco:</h2>
+                        <div class="group-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div><!--w33-->
+                </div><!--container-->
+                <div class="clear"></div>
+            </footer><!--footer-1-->
+            <footer class="footer2">
+                <div class="container">
+                    <div class="w100">
+                        <p>Todos os direitos reservados</p>
+                    </div><!--w100-->
+                </div><!--container-->
+            </footer><!--footer2-->
+        </section><!--footer-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $('nav.menu-mobile h2').click(function(){
+                $('nav.menu-mobile ul').slideToggle();
+            })
+        </script>
+    </body>
+</html>
